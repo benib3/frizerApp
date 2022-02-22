@@ -149,9 +149,9 @@
         app:layout_constraintVertical_bias="0.333" />
 
     <ScrollView
-        android:layout_width="145dp"
-        android:layout_height="255dp"
-        android:layout_marginTop="230dp"
+        android:layout_width="136dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="180dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -159,56 +159,120 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
-                android:text="10:00-10:30" />
+                android:text="10:00-10:30"
+                app:backgroundTint="#4CAF50" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="136dp"
                 android:layout_height="wrap_content"
-                android:text="10:30-11:00" />
+                android:text="10:30-11:00"
+                app:backgroundTint="#FF0000" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="136dp"
                 android:layout_height="wrap_content"
-                android:text="11:00-11:30" />
+                android:text="11:00-11:30"
+                app:backgroundTint="#FF0000"/>
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="136dp"
                 android:layout_height="wrap_content"
-                android:text="11:30-12:00" />
+                android:text="11:30-12:00"
+                app:backgroundTint="#4CAF50" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="136dp"
                 android:layout_height="wrap_content"
-                android:text="12:00-12:30" />
+                android:text="12:00-12:30"
+                app:backgroundTint="#4CAF50" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="136dp"
                 android:layout_height="wrap_content"
-                android:text="12:30-13:00" />
+                android:text="12:30-13:00"
+                app:backgroundTint="#4CAF50" />
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="13:00-13:30" />
+                android:text="13:00-13:30"
+                app:backgroundTint="#FF0000"/>
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="13:30-14:00" />
+                android:text="13:30-14:00"
+                app:backgroundTint="#FF0000"/>
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15:00-15:30"
+                app:backgroundTint="#FF0000"/>
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15:30-16:00"
+                app:backgroundTint="#FF0000"/>
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="16:00-16:30"
+                app:backgroundTint="#FF0000"/>
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="16:30-17:00"
+                app:backgroundTint="#FF0000"/>
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="17:00-17:30"
+                app:backgroundTint="#FF0000"/>
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="17:30-18:00"
+                app:backgroundTint="#FF0000"/>
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18:00-18:30"
+                app:backgroundTint="#FF0000"/>
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18:30-19:00"
+                app:backgroundTint="#FF0000"/>
 
         </LinearLayout>
     </ScrollView>
