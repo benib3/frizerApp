@@ -6,111 +6,73 @@
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
+    android:padding="50dp"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="138dp"
-        android:layout_height="103dp"
-        android:background="#00FFFFFF"
-        android:baselineAlignBottom="false"
-        android:contentDescription="@string/slikaadmin"
+    <LinearLayout
+        android:id="@+id/linearLogin"
+        android:layout_width="305dp"
+        android:layout_height="293dp"
+        android:dividerPadding="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162"
-        app:srcCompat="@drawable/frizer_icon" />
+        app:layout_constraintVertical_bias="0.449">
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:fontFamily="sans-serif-medium"
-        android:hint="@string/username"
-        android:inputType="textPersonName"
-        android:textColorHighlight="#03A9F4"
-        android:textColorLink="#0C0B0B"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:background="#00FFFFFF"
+            android:baselineAlignBottom="false"
+            android:contentDescription="@string/slikaadmin"
+            app:srcCompat="@drawable/frizer_icon" />
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="210dp"
-        android:layout_height="43dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:fontFamily="serif"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:textColorHighlight="#03A9F4"
-        android:textColorLink="#000000"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559" />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:textColorHighlight="#03A9F4"
+            android:textColorLink="#000000"
+            android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/UlogujButton"
-        android:layout_width="130dp"
-        android:layout_height="63dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/uloguj_se"
-        app:backgroundTint="#050505"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.808" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="210dp"
+            android:layout_height="43dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHighlight="#03A9F4"
+            android:textColorLink="#000000"
+            android:textStyle="italic" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="141dp"
-        android:layout_height="36dp"
-        android:checked="false"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/sacuvaj_podatke"
-        app:buttonTint="#171414"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638" />
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="141dp"
+            android:layout_height="36dp"
+            android:checked="false"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/sacuvaj_podatke"
+            app:buttonTint="#171414" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autoText="true"
-        android:fontFamily="sans-serif-medium"
-        android:text="Molim vas unesite vas username i password."
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.593"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.346" />
+        <Button
+            android:id="@+id/UlogujButton"
+            android:layout_width="130dp"
+            android:layout_height="63dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/uloguj_se"
+            app:backgroundTint="#050505" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
