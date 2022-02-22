@@ -49,8 +49,8 @@
         android:layout_height="53dp"
         android:onClick="onClick"
         android:text="Datum termina"
-        app:backgroundTint="#050505"
         android:textColor="#ECE7E7"
+        app:backgroundTint="#050505"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.158"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.318" />
 
-   <!-- <Button
+    <!-- <Button
         android:id="@+id/timePickerButton"
         android:layout_width="145dp"
         android:layout_height="55dp"
@@ -102,7 +102,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.923" />
 
-<!--
+    <!--
     <TextView
         android:id="@+id/datumView"
         android:layout_width="wrap_content"
@@ -138,8 +138,8 @@
         android:layout_height="47dp"
         android:clickable="false"
         android:ems="10"
-        android:hint="D-M-G"
         android:focusable="false"
+        android:hint="D-M-G"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -148,20 +148,85 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.333" />
 
-   <!-- <EditText
-        android:id="@+id/textVrijeme"
-        android:layout_width="137dp"
-        android:layout_height="40dp"
-        android:clickable="false"
-        android:ems="10"
-        android:focusable="false"
-        android:inputType="textPersonName"
+    <ScrollView
+        android:layout_width="145dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="230dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481" />-->
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="10:00-10:30" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="10:30-11:00" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="11:00-11:30" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="11:30-12:00" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="12:00-12:30" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="12:30-13:00" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13:00-13:30" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13:30-14:00" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <EditText
+         android:id="@+id/textVrijeme"
+         android:layout_width="137dp"
+         android:layout_height="40dp"
+         android:clickable="false"
+         android:ems="10"
+         android:focusable="false"
+         android:inputType="textPersonName"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.929"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.481" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
