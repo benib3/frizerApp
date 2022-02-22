@@ -122,6 +122,7 @@
         android:layout_width="204dp"
         android:layout_height="27dp"
         android:background="#121212"
+        
         android:text="Izaberite vrijeme termina:"
         android:textColor="#F1F0F0"
         android:textSize="18sp"

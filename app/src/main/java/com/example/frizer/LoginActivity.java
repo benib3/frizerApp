@@ -23,13 +23,13 @@ public class LoginActivity extends AppCompatActivity {
         switchTosecondActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                switchToUser();
 
             }
         });
 
 
-tacanUnos();
+
 
 
     }
@@ -41,19 +41,6 @@ tacanUnos();
 
 
     }
-    private void tacanUnos(){
-        //Db helper
-        DbHelper dbHelper=new DbHelper(LoginActivity.this);
-        //Usr and password
-        EditText u1=findViewById(R.id.username);
-        String username=u1.getText().toString();
-        EditText p1 =findViewById(R.id.password);
-        String password=p1.getText().toString();
 
-        System.out.println(dbHelper.getUserLogin());
-
-
-
-    }
 
 }

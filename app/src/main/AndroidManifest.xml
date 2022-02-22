@@ -3,15 +3,17 @@
     package="com.example.frizer">
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
         android:theme="@style/Theme.Frizer">
         <activity android:name=".user_window"></activity>
-        <activity android:name=".TerminAddActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".TerminAddActivity" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".LoginActivity" android:windowSoftInputMode="stateHidden|adjustPan"/>
         <activity android:name=".AboutActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

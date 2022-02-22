@@ -31,6 +31,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
+        android:fontFamily="sans-serif-medium"
         android:hint="@string/username"
         android:inputType="textPersonName"
         android:textColorHighlight="#03A9F4"
@@ -70,7 +71,7 @@
         android:id="@+id/UlogujButton"
         android:layout_width="130dp"
         android:layout_height="63dp"
-        android:fontFamily="serif"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/uloguj_se"
         app:backgroundTint="#050505"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,7 +88,7 @@
         android:layout_width="141dp"
         android:layout_height="36dp"
         android:checked="false"
-        android:fontFamily="sans-serif-light"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/sacuvaj_podatke"
         app:buttonTint="#171414"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -96,5 +97,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.638" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="Molim vas unesite vas username i password."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
