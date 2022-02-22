@@ -30,12 +30,13 @@ public class TerminAddActivity extends AppCompatActivity implements View.OnClick
         }
 
         btnDatePicker=(Button)findViewById(R.id.datePickerButton);
-        btnTimePicker=(Button)findViewById(R.id.timePickerButton);
+        /*btnTimePicker=(Button)findViewById(R.id.timePickerButton);*/
+        /*txtTime=(EditText)findViewById(R.id.textVrijeme);*/
         txtDate=(EditText)findViewById(R.id.textDatum);
-        txtTime=(EditText)findViewById(R.id.textVrijeme);
+
 
         btnDatePicker.setOnClickListener(this);
-        btnTimePicker.setOnClickListener(this);
+        /*btnTimePicker.setOnClickListener(this);*/
       //Za poziiv Bena
         findViewById(R.id.pozoviButton).setOnClickListener(new View.OnClickListener() {
             @Override
