@@ -22,8 +22,8 @@ public class AboutActivity extends AppCompatActivity {
         }
 
         //button za otvaranje instagrama
-        ImageButton btn = findViewById(R.id.instagramButton);
-        btn.setOnClickListener(vd -> openInsta());
+        /*ImageButton btn = findViewById(R.id.instagramButton);
+        btn.setOnClickListener(vd -> openInsta());*/
 
     }
     //metoda za otvaranje instagrama

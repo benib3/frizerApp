@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity{
         }
 
 
-
-
         View switchToThirdActivity = findViewById(R.id.termini3);
         switchToThirdActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,8 +49,6 @@ public class MainActivity extends AppCompatActivity{
 
             }
         });
-
-
 
 
     }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg4"
     tools:context=".TerminAddActivity">
 
     <EditText
@@ -12,7 +13,7 @@
         android:layout_height="38dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="Unesi Vase ime"
+        android:hint="Unesite Vase ime"
         android:inputType="textPersonName"
         android:textColorHighlight="#2196F3"
         android:textColorLink="#050404"
@@ -79,9 +80,10 @@
         app:backgroundTint="#050505"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627" />
+        app:layout_constraintVertical_bias="0.923" />
 
     <Button
         android:id="@+id/pozoviButton"
@@ -93,24 +95,10 @@
         app:backgroundTint="#050505"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853" />
-
-    <TextView
-        android:id="@+id/welcomeText2"
-        android:layout_width="63dp"
-        android:layout_height="42dp"
-        android:lineSpacingExtra="8sp"
-        android:text="ili "
-        android:textSize="30sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.577"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintVertical_bias="0.923" />
 
     <TextView
         android:id="@+id/datumView"
@@ -143,6 +131,7 @@
         android:clickable="false"
         android:ems="10"
         android:hint="D-M-G"
+        android:focusable="false"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -157,6 +146,7 @@
         android:layout_height="40dp"
         android:clickable="false"
         android:ems="10"
+        android:focusable="false"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

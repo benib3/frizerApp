@@ -73,7 +73,8 @@ public class TerminAddActivity extends AppCompatActivity implements View.OnClick
                     }, mYear, mMonth, mDay);
             datePickerDialog.show();
         }
-        if (v == btnTimePicker) {
+        //za time picker btn
+      /*  if (v == btnTimePicker) {
 
             // Get Current Time
             final Calendar c = Calendar.getInstance();
@@ -92,7 +93,7 @@ public class TerminAddActivity extends AppCompatActivity implements View.OnClick
                         }
                     }, mHour, mMinute, false);
             timePickerDialog.show();
-        }
+        }*/
 
     }
 
