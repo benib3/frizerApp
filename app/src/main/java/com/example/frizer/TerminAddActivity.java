@@ -3,7 +3,6 @@ package com.example.frizer;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
-import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.TimePicker;
 
 import java.util.Calendar;
 
@@ -38,7 +36,7 @@ public class TerminAddActivity extends AppCompatActivity implements View.OnClick
         btnDatePicker.setOnClickListener(this);
         /*btnTimePicker.setOnClickListener(this);*/
       //Za poziiv Bena
-        findViewById(R.id.pozoviButton).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.otkaziButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pozoviBena("+38269049111 ");

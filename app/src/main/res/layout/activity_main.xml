@@ -8,39 +8,71 @@
     android:background="@drawable/bgmain"
     tools:context=".MainWindow">
 
-    <Button
-        android:id="@+id/slobodni_termini"
-        android:layout_width="197dp"
-        android:layout_height="102dp"
-        android:text="Zakazi termin"
-        app:backgroundTint="#AB0B0808"
+    <LinearLayout
+        android:layout_width="235dp"
+        android:layout_height="339dp"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.813">
 
-    <Button
-        android:id="@+id/admin"
-        android:layout_width="197dp"
-        android:layout_height="102dp"
-        android:text="Frizer Ben(*)"
-        app:backgroundTint="#AB0B0808"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.694" />
+        <Button
+            android:id="@+id/slobodni_termini"
+            android:layout_width="197dp"
+            android:layout_height="102dp"
+            android:text="@string/zakazi_termin"
+            app:backgroundTint="#AB0B0808" />
 
-    <Button
-        android:id="@+id/termini3"
-        android:layout_width="197dp"
-        android:layout_height="102dp"
-        android:text="O Benu"
-        app:backgroundTint="#AB0B0808"
+        <Button
+            android:id="@+id/admin"
+            android:layout_width="197dp"
+            android:layout_height="102dp"
+            android:text="@string/frizer_ben"
+            app:backgroundTint="#AB0B0808" />
+
+        <Button
+            android:id="@+id/termini3"
+            android:layout_width="197dp"
+            android:layout_height="102dp"
+            android:text="@string/o_benu"
+            app:backgroundTint="#AB0B0808" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="314dp"
+        android:layout_height="67dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.887" />
+        app:layout_constraintVertical_bias="0.995">
+
+        <ImageButton
+            android:id="@+id/ig_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="TODO"
+            app:srcCompat="@android:drawable/alert_dark_frame" />
+
+        <ImageButton
+            android:id="@+id/call_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/alert_dark_frame" />
+
+        <ImageButton
+            android:id="@+id/web_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/alert_dark_frame" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
