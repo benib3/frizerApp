@@ -1,6 +1,7 @@
 package com.example.frizer;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity{
         switchTofirstdActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                switchtoTermini();
+                switchtoLogin();
 
             }
         });
@@ -50,8 +51,12 @@ public class MainActivity extends AppCompatActivity{
         Intent switchActivityIntent = new Intent(this, AboutActivity.class);
         startActivity(switchActivityIntent);
     }
-    private void switchtoTermini(){
-        Intent actIntent=new Intent(this,TerminAddActivity.class);
+    private void switchtoRegister(){
+        Intent actIntent=new Intent(this,UserRegister.class);
+        startActivity(actIntent);
+    }
+    private void switchtoLogin(){
+        Intent actIntent=new Intent(this,UserLogin.class);
         startActivity(actIntent);
     }
     private void switchtoUser() {
@@ -61,6 +66,10 @@ public class MainActivity extends AppCompatActivity{
     private void switchtoAdmin() {
         Intent intet=new Intent(this,LoginActivity.class);
         startActivity(intet);
+    }
+    //Za poziiv Bena funkcija
+    private void pozoviBena(final String broj) {
+        startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel",broj,null)));
     }
 }
 

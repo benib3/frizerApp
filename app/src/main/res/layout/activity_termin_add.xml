@@ -7,56 +7,224 @@
     android:background="@drawable/bg4"
     tools:context=".TerminAddActivity">
 
-    <EditText
-        android:id="@+id/imeText"
-        android:layout_width="144dp"
-        android:layout_height="43dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/unesite_vase_ime"
-        android:inputType="textPersonName"
-        android:textColor="#000000"
-        android:textColorHighlight="#2196F3"
-        android:textColorLink="#050404"
-        android:textSize="18sp"
-        android:textStyle="italic"
+    <LinearLayout
+        android:id="@+id/linearLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.186" />
+        app:layout_constraintVertical_bias="0.449">
 
-    <TextView
-        android:id="@+id/welcomeText"
-        android:layout_width="195dp"
-        android:layout_height="42dp"
-        android:text="@string/dobrodosli"
-        android:textSize="36sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
+        <TextView
+            android:id="@+id/naslov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#48FDFDFD"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/zakazite_svoj_termin_na_vrijeme_odaberite_datum_i_vrijeme"
+            android:textColor="#4E4D4D"
+            android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/datePickerButton"
-        android:layout_width="146dp"
-        android:layout_height="53dp"
-        android:onClick="onClick"
-        android:text="@string/datum_termina"
-        android:textColor="#ECE7E7"
-        app:backgroundTint="#050505"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.318" />
+        <TextView
+            android:id="@+id/datumView2"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:background="#00000000"
+
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/izaberite_datum_termina"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/datePickerButton"
+            android:layout_width="146dp"
+            android:layout_height="53dp"
+            android:onClick="onClick"
+            android:text="@string/datum_termina"
+            android:textColor="#ECE7E7"
+            app:backgroundTint="#050505" />
+
+        <EditText
+            android:id="@+id/textDatum"
+            android:layout_width="136dp"
+            android:layout_height="47dp"
+            android:autofillHints=""
+            android:clickable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/d_m_g"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/vrijemeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/izaberite_vrijeme_termina"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="146dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_10_00_10_30"
+                    app:backgroundTint="#4CAF50" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_10_30_11_00"
+                    app:backgroundTint="#FF0000" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_11_00_11_30"
+                    app:backgroundTint="#FF0000" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_11_30_12_00"
+                    app:backgroundTint="#4CAF50" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_12_00_12_30"
+                    app:backgroundTint="#4CAF50" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_12_30_13_00"
+                    app:backgroundTint="#4CAF50" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_13_00_13_30"
+                    app:backgroundTint="#FF0000" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_13_30_14_00"
+                    app:backgroundTint="#FF0000" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_15_00_15_30"
+                    app:backgroundTint="#FF0000" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_15_30_16_00"
+                    app:backgroundTint="#FF0000" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_16_00_16_30"
+                    app:backgroundTint="#FF0000" />
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_16_30_17_00"
+                    app:backgroundTint="#FF0000" />
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_17_00_17_30"
+                    app:backgroundTint="#FF0000" />
+
+                <Button
+                    android:id="@+id/button15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_17_30_18_00"
+                    app:backgroundTint="#FF0000" />
+
+                <Button
+                    android:id="@+id/button16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_18_00_18_30"
+                    app:backgroundTint="#FF0000" />
+
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_18_30_19_00"
+                    app:backgroundTint="#FF0000" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/datumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/izaberite_uslugu"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spin_usluge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/zakaziButton"
+            android:layout_width="145dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick"
+            android:text="@string/zakazi"
+            android:textColor="#009688"
+            app:backgroundTint="#050505" />
+
+    </LinearLayout>
 
     <!-- <Button
         android:id="@+id/timePickerButton"
@@ -72,36 +240,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.468" />-->
 
-    <Button
-        android:id="@+id/zakaziButton"
-        android:layout_width="145dp"
-        android:layout_height="55dp"
-        android:onClick="onClick"
-        android:text="@string/zakazi"
-        android:textColor="#009688"
-        app:backgroundTint="#050505"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.124"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
-
-    <Button
-        android:id="@+id/otkaziButton"
-        android:layout_width="145dp"
-        android:layout_height="55dp"
-        android:onClick="onClick"
-        android:text="@string/otkazi_berbera"
-        android:textColor="#A35656"
-        app:backgroundTint="#050505"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.868"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
-
     <!--
     <TextView
         android:id="@+id/datumView"
@@ -116,168 +254,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.276" />
 -->
-
-    <TextView
-        android:id="@+id/vrijemeView"
-        android:layout_width="204dp"
-        android:layout_height="27dp"
-        android:background="#121212"
-        
-        android:text="@string/izaberite_vrijeme_termina"
-        android:textColor="#F1F0F0"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433" />
-
-    <EditText
-        android:id="@+id/textDatum"
-        android:layout_width="136dp"
-        android:layout_height="47dp"
-        android:clickable="false"
-        android:ems="10"
-        android:focusable="false"
-        android:hint="@string/d_m_g"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.919"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333"
-        android:autofillHints="" />
-
-    <ScrollView
-        android:layout_width="136dp"
-        android:layout_height="146dp"
-        android:layout_marginTop="180dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="135dp"
-                android:layout_height="wrap_content"
-                android:text="@string/_10_00_10_30"
-                app:backgroundTint="#4CAF50" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="136dp"
-                android:layout_height="wrap_content"
-                android:text="@string/_10_30_11_00"
-                app:backgroundTint="#FF0000" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="136dp"
-                android:layout_height="wrap_content"
-                android:text="@string/_11_00_11_30"
-                app:backgroundTint="#FF0000"/>
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="136dp"
-                android:layout_height="wrap_content"
-                android:text="@string/_11_30_12_00"
-                app:backgroundTint="#4CAF50" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="136dp"
-                android:layout_height="wrap_content"
-                android:text="@string/_12_00_12_30"
-                app:backgroundTint="#4CAF50" />
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="136dp"
-                android:layout_height="wrap_content"
-                android:text="@string/_12_30_13_00"
-                app:backgroundTint="#4CAF50" />
-
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_13_00_13_30"
-                app:backgroundTint="#FF0000"/>
-
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_13_30_14_00"
-                app:backgroundTint="#FF0000"/>
-
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_15_00_15_30"
-                app:backgroundTint="#FF0000"/>
-
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_15_30_16_00"
-                app:backgroundTint="#FF0000"/>
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_16_00_16_30"
-                app:backgroundTint="#FF0000"/>
-
-            <Button
-                android:id="@+id/button13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_16_30_17_00"
-                app:backgroundTint="#FF0000"/>
-
-            <Button
-                android:id="@+id/button14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_17_00_17_30"
-                app:backgroundTint="#FF0000"/>
-
-            <Button
-                android:id="@+id/button15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_17_30_18_00"
-                app:backgroundTint="#FF0000"/>
-
-            <Button
-                android:id="@+id/button16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_18_00_18_30"
-                app:backgroundTint="#FF0000"/>
-
-            <Button
-                android:id="@+id/button17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_18_30_19_00"
-                app:backgroundTint="#FF0000"/>
-
-        </LinearLayout>
-    </ScrollView>
 
     <!-- <EditText
          android:id="@+id/textVrijeme"

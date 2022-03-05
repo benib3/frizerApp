@@ -7,15 +7,19 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 
+import java.lang.reflect.Array;
 import java.util.Calendar;
 
 public class TerminAddActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnDatePicker, btnTimePicker;
     EditText txtDate, txtTime;
+    Spinner usluge;
     private int mYear, mMonth, mDay, mHour, mMinute;
 
     @Override
@@ -27,21 +31,19 @@ public class TerminAddActivity extends AppCompatActivity implements View.OnClick
             getSupportActionBar().hide();
         }
 
+
         btnDatePicker=(Button)findViewById(R.id.datePickerButton);
-        /*btnTimePicker=(Button)findViewById(R.id.timePickerButton);*/
-        /*txtTime=(EditText)findViewById(R.id.textVrijeme);*/
+        usluge=(Spinner)findViewById(R.id.spin_usluge);
         txtDate=(EditText)findViewById(R.id.textDatum);
-
-
         btnDatePicker.setOnClickListener(this);
-        /*btnTimePicker.setOnClickListener(this);*/
-      //Za poziiv Bena
-        findViewById(R.id.otkaziButton).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                pozoviBena("+38269049111 ");
-            }
-        });
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.usluge_array, android.R.layout.simple_spinner_item);
+    // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    // Apply the adapter to the spinner
+            usluge.setAdapter(adapter);
+
 
 
 
@@ -97,9 +99,6 @@ public class TerminAddActivity extends AppCompatActivity implements View.OnClick
     }
 
 
-    //Za poziiv Bena funkcija
-    private void pozoviBena(final String broj) {
-        startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel",broj,null)));
-    }
+
 
 }

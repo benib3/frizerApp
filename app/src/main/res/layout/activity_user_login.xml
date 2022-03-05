@@ -2,17 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraitLayout"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
-    android:padding="50dp"
-    tools:context=".LoginActivity">
+    android:background="@drawable/bg3"
+    tools:context=".UserLogin"
+    android:padding="5dp"
+    >
+
 
     <LinearLayout
         android:id="@+id/linearLogin"
-        android:layout_width="305dp"
-        android:layout_height="293dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
         android:dividerPadding="15dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
@@ -23,26 +25,36 @@
         app:layout_constraintVertical_bias="0.449">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/login_img"
+            android:layout_width="173dp"
+            android:layout_height="145dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/login_icon" />
+
+        <TextView
+            android:id="@+id/registration_text"
             android:layout_width="match_parent"
-            android:layout_height="103dp"
-            android:background="#00FFFFFF"
-            android:baselineAlignBottom="false"
-            android:contentDescription="@string/slikaadmin"
-            app:srcCompat="@drawable/frizer_icon" />
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:lineSpacingExtra="2sp"
+            android:padding="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/molimovas_register"
+            android:textAllCaps="false"
+            android:textColor="#353535"
+            android:textSize="14sp"
+            android:typeface="normal" />
 
         <EditText
-            android:id="@+id/user_ime"
+            android:id="@+id/user_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:autofillHints=""
             android:ems="10"
-            android:fontFamily="sans-serif-medium"
-            android:hint="@string/username"
-            android:inputType="textPersonName"
-            android:textColorHighlight="#03A9F4"
-            android:textColorLink="#000000"
-            android:textStyle="italic" />
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/user_password"
@@ -57,21 +69,22 @@
             android:textColorLink="#000000"
             android:textStyle="italic" />
 
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="141dp"
-            android:layout_height="36dp"
-            android:checked="false"
+        <Button
+            android:id="@+id/ulogujBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/sacuvaj_podatke"
-            app:buttonTint="#171414" />
+            android:text="@string/uloguj_se"
+            app:backgroundTint="#050505" />
 
         <Button
             android:id="@+id/RegButton"
-            android:layout_width="130dp"
-            android:layout_height="63dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/uloguj_se"
+            android:text="@string/registruj_se"
             app:backgroundTint="#050505" />
     </LinearLayout>
 

@@ -1,18 +1,11 @@
 package com.example.frizer;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
     CheckBox checkBox;
@@ -26,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
-        View switchTosecondActivity = findViewById(R.id.UlogujButton);
+        View switchTosecondActivity = findViewById(R.id.RegButton);
 
         switchTosecondActivity.setOnClickListener(new View.OnClickListener() {
             @Override
