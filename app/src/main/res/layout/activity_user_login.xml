@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg3"
-    tools:context=".UserLogin"
+    tools:context=".user.UserLogin"
     android:padding="5dp"
     >
 
@@ -70,7 +70,7 @@
             android:textStyle="italic" />
 
         <Button
-            android:id="@+id/ulogujBtn"
+            android:id="@+id/uloguj_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -79,7 +79,7 @@
             app:backgroundTint="#050505" />
 
         <Button
-            android:id="@+id/RegButton"
+            android:id="@+id/reg_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"

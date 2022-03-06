@@ -7,7 +7,7 @@
 
     android:layout_height="match_parent"
     android:padding="50dp"
-    tools:context=".LoginActivity">
+    tools:context=".admin.LoginActivity">
 
     <LinearLayout
         android:id="@+id/linearLogin"

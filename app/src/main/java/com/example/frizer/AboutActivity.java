@@ -21,21 +21,9 @@ public class AboutActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        //button za otvaranje instagrama
-        /*ImageButton btn = findViewById(R.id.instagramButton);
-        btn.setOnClickListener(vd -> openInsta());*/
+
 
     }
-    //metoda za otvaranje instagrama
-    public void openInsta(){
-        Uri uri = Uri.parse("https://www.instagram.com/_u/frizerben/");
-        Intent likeIng=new Intent(Intent.ACTION_VIEW,uri);
-        likeIng.setPackage("com.instagram.android");
 
-        try {
-            startActivity(likeIng);
-        } catch (ActivityNotFoundException e){
-            startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.instagram.com/_u/frizerben/")));
-        }}
 
 }

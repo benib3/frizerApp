@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:background="@drawable/bg2"
     android:layout_height="match_parent"
-    android:padding="5dp">
+    android:padding="5dp"
+    tools:context=".user.UserRegister"
+   >
 
     <LinearLayout
         android:id="@+id/linearLogin"
@@ -106,7 +108,7 @@
             android:textStyle="italic" />
 
         <Button
-            android:id="@+id/RegButton"
+            android:id="@+id/register_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

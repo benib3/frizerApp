@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg4"
-    tools:context=".TerminAddActivity">
+    tools:context=".user.TerminAddActivity">
 
     <LinearLayout
         android:id="@+id/linearLogin"

@@ -1,4 +1,4 @@
-package com.example.frizer;
+package com.example.frizer.admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+
+import com.example.frizer.R;
+import com.example.frizer.admin.AdminActivity;
 
 public class LoginActivity extends AppCompatActivity {
     CheckBox checkBox;
@@ -36,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void switchToUser(){
-        Intent actIntent=new Intent(this,user_window.class);
+        Intent actIntent=new Intent(this, AdminActivity.class);
         startActivity(actIntent);
 
 

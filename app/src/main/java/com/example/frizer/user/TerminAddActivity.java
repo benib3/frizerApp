@@ -1,4 +1,4 @@
-package com.example.frizer;
+package com.example.frizer.user;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+
+import com.example.frizer.R;
 
 import java.lang.reflect.Array;
 import java.util.Calendar;

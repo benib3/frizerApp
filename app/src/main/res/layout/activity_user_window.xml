@@ -4,78 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user_window">
+    android:background="@drawable/bg4"
+    tools:context=".admin.AdminActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Zakazani Termini"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065" />
-
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="300dp"
-
-        android:layout_height="203dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164">
-
-
-        <TableRow
-            android:id="@+id/row1"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/admin_zakazani_terminiBtn"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/zakazani_termini"
+            app:backgroundTint="#050505" />
 
-            >
+        <Button
+            android:id="@+id/admin_QRCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/qr_skener"
+            app:backgroundTint="#050505" />
 
-            <TextView
-                android:id="@+id/id_numb"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="#5E5C5C"
-                android:padding="18dip"
-                android:text="ID"
-                android:textColor="#000"
-                android:textSize="12dp" />
-
-            <TextView
-                android:id="@+id/ime_table"
-                android:layout_width="118dp"
-                android:layout_height="wrap_content"
-                android:background="#5E5C5C"
-                android:gravity="center"
-                android:padding="18dip"
-                android:text="IME"
-                android:textColor="#000"
-                android:textSize="12dp" />
-
-            <TextView
-                android:id="@+id/termini_table"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="#5E5C5C"
-                android:padding="18dip"
-                android:text="DATUM I VRIJEME"
-                android:textColor="#000"
-                android:textSize="12dp" />
-
-
-        </TableRow>
-    </TableLayout>
-
+        <Button
+            android:id="@+id/admin_odjaviBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/odjavi_se"
+            app:backgroundTint="#050505" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightLarge">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="3dp"
+        android:background="#7E7B7B"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/data_ime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/data_vrijeme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/data_usluga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/data_datum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

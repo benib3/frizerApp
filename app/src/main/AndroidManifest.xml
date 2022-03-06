@@ -4,22 +4,24 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/appicon"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Frizer">
-        <activity android:name=".UserLogin"></activity>
+        <activity android:name=".admin.AdminTermini"></activity>
+        <activity android:name=".user.UserLogin" />
         <activity
-            android:name=".UserRegister"
+            android:name=".user.UserRegister"
             android:label="@string/title_activity_user_register"
             android:theme="@style/Theme.Frizer.NoActionBar" />
-        <activity android:name=".user_window" />
+        <activity android:name=".admin.AdminActivity" />
         <activity
-            android:name=".TerminAddActivity"
+            android:name=".user.TerminAddActivity"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".admin.LoginActivity"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".MainActivity">
