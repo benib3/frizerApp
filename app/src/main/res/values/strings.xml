@@ -103,4 +103,5 @@
     <string name="zakazani_termini">Zakazani termini</string>
     <string name="qr_skener">QR skener</string>
     <string name="odjavi_se">Odjavi se</string>
+    <string name="qr_code">qr_code</string>
 </resources>

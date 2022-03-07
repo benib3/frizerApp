@@ -19,9 +19,9 @@ import java.lang.reflect.Array;
 import java.util.Calendar;
 
 public class TerminAddActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btnDatePicker, btnTimePicker;
-    EditText txtDate, txtTime;
-    Spinner usluge;
+    private Button btnDatePicker, btnZakazi;
+    private EditText txtDate, txtTime;
+    private Spinner usluge;
     private int mYear, mMonth, mDay, mHour, mMinute;
 
     @Override
@@ -37,6 +37,7 @@ public class TerminAddActivity extends AppCompatActivity implements View.OnClick
         btnDatePicker=(Button)findViewById(R.id.datePickerButton);
         usluge=(Spinner)findViewById(R.id.spin_usluge);
         txtDate=(EditText)findViewById(R.id.textDatum);
+
         btnDatePicker.setOnClickListener(this);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -46,12 +47,21 @@ public class TerminAddActivity extends AppCompatActivity implements View.OnClick
     // Apply the adapter to the spinner
             usluge.setAdapter(adapter);
 
+        View zakaziActivity = findViewById(R.id.zakaziButton);
+        zakaziActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toQrView();
 
-
+            }
+        });
 
     }
 
-
+    private void toQrView(){
+        Intent actIntent=new Intent(this, qrActivity.class);
+        startActivity(actIntent);
+    }
     @Override
     public void onClick(View v) {
         if (v == btnDatePicker) {
