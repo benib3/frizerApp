@@ -101,7 +101,19 @@
             android:autofillHints=""
             android:ems="10"
             android:fontFamily="sans-serif-medium"
-            android:hint="@string/password"
+            android:hint="@string/lozinka"
+            android:inputType="textPassword"
+            android:textColorHighlight="#03A9F4"
+            android:textColorLink="#000000"
+            android:textStyle="italic" />
+        <EditText
+            android:id="@+id/user_password2"
+            android:layout_width="210dp"
+            android:layout_height="43dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/ponovo_lozinka"
             android:inputType="textPassword"
             android:textColorHighlight="#03A9F4"
             android:textColorLink="#000000"
@@ -114,6 +126,7 @@
             android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-medium"
             android:text="@string/registruj_se"
+            android:onClick="onRegisterClick"
             app:backgroundTint="#050505" />
 
     </LinearLayout>

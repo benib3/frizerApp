@@ -32,17 +32,6 @@
             android:textColor="#4E4D4D"
             android:textSize="25sp" />
 
-        <TextView
-            android:id="@+id/datumView2"
-            android:layout_width="wrap_content"
-            android:layout_height="27dp"
-            android:background="#00000000"
-
-            android:fontFamily="sans-serif-condensed"
-            android:text="@string/izaberite_datum_termina"
-            android:textColor="#000000"
-            android:textSize="18sp" />
-
         <Button
             android:id="@+id/datePickerButton"
             android:layout_width="146dp"
@@ -215,11 +204,11 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/zakaziButton"
+            android:id="@+id/zakaziBtn"
             android:layout_width="145dp"
             android:layout_height="55dp"
             android:layout_marginTop="10dp"
-            android:onClick="onClick"
+
             android:text="@string/zakazi"
             android:textColor="#009688"
             app:backgroundTint="#050505" />
