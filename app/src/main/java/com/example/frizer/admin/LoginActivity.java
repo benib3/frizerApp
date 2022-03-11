@@ -45,17 +45,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     }
-    public void checkChkBox(){
-        CheckBox box= checkBox.findViewById(R.id.checkBox);
-        if(box.isChecked()!=false){
-          //TODO make dialog
 
-
-
-
-        }
-
-    }
 
 
 

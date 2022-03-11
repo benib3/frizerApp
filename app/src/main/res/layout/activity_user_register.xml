@@ -27,13 +27,13 @@
         <TextView
             android:id="@+id/titleText"
             android:layout_width="296dp"
-            android:layout_height="107dp"
+            android:layout_height="wrap_content"
             android:background="#00A5A0A0"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="@string/dobrodosli"
             android:textColor="#2E2E2E"
-            android:textSize="60sp"
+            android:textSize="40sp"
             android:textStyle="bold|italic" />
 
         <ImageView
@@ -123,7 +123,7 @@
             android:id="@+id/register_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="sans-serif-medium"
             android:text="@string/registruj_se"
             android:onClick="onRegisterClick"

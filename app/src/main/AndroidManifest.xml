@@ -13,9 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Frizer">
         <activity
+            android:name=".user.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".user.QRActivity"
             android:label="@string/title_activity_q_r"
-            android:theme="@style/Theme.Frizer.NoActionBar"></activity>
+            android:theme="@style/Theme.Frizer.NoActionBar" />
         <activity android:name=".admin.AdminTermini" />
         <activity android:name=".user.UserLogin" />
         <activity

@@ -20,21 +20,7 @@ public class AdminTermini extends AppCompatActivity {
             getSupportActionBar().hide();
         }
         MyListData[] myListData = new MyListData[] {
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
-                new MyListData("Beni","20.6.2022","9:30-10:00","Sisanje"),
+
 
         };
 

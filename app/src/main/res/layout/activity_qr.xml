@@ -7,26 +7,76 @@
     tools:context=".user.QRActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <ImageView
-            android:id="@+id/qrImage"
-            android:layout_width="400dp"
-            android:layout_height="400dp"
-             />
+            android:id="@+id/ivOutput"
+            android:layout_width="308dp"
+            android:layout_height="237dp"
+            tools:srcCompat="@color/white" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Vrijeme termina :"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timestampTermina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usluga :"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/uslugaTermina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
 
         <Button
-            android:id="@+id/prikaziQR"
+            android:id="@+id/otkaziTerminButton"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:onClick="otkaziTermin"
+            android:text="@string/otkazi"
+            android:textSize="20sp"
+            app:backgroundTint="#000000" />
+
+        <TextView
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Prikazi" />
+            android:layout_marginTop="20sp"
+            android:text="Da biste zakazali novi termin trebate otkazati postojeci"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

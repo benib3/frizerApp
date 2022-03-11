@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.frizer.user.TerminAddActivity">
+    <item
+        android:id="@+id/action_promjeni_lozinku"
+        android:checkable="false"
+        android:orderInCategory="100"
+        android:title="@string/promijeni_lozinku"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_izbrisi_nalog"
+        android:onClick="izbrisiSe"
+        android:orderInCategory="101"
+        android:title="@string/izbrisi_nalog"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_odjavi_se"
+        android:onClick="odjaviSe"
+        android:orderInCategory="102"
+        android:title="@string/odjavi_se"
+        app:showAsAction="never" />
+</menu>

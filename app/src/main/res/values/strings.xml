@@ -27,8 +27,6 @@
         <item>4.4.2034</item>
 
     </string-array>
-
-
     <string-array name="vrijeme_array">
         <item>9:00-9:30</item>
         <item>9:00-9:30</item>
@@ -49,7 +47,6 @@
     <string name="izbrisi_nalog">Izbrisi nalog</string>
     <string name="otkazi">Otkazi</string>
     <string name="token">token</string>
-
 
 
     <!--Матово-->

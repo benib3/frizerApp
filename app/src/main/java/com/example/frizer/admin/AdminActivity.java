@@ -22,7 +22,7 @@ public class AdminActivity extends AppCompatActivity {
         switchToAdminTermini.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                switchtoAdminTermini();
+
 
             }
         });
