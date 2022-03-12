@@ -32,15 +32,17 @@
             app:srcCompat="@drawable/frizer_icon" />
 
         <EditText
-            android:id="@+id/user_ime"
+            android:id="@+id/user_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:autofillHints=""
             android:ems="10"
             android:fontFamily="sans-serif-medium"
-            android:hint="@string/username"
-            android:inputType="textPersonName"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
             android:textColorHighlight="#03A9F4"
+            android:textColorHint="#757575"
             android:textColorLink="#000000"
             android:textStyle="italic" />
 
@@ -54,8 +56,10 @@
             android:hint="@string/password"
             android:inputType="textPassword"
             android:textColorHighlight="#03A9F4"
+            android:textColorHint="#757575"
             android:textColorLink="#000000"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/RegButton"

@@ -25,6 +25,7 @@
 
         <Button
             android:id="@+id/admin_QRCode"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -34,6 +35,7 @@
 
         <Button
             android:id="@+id/admin_odjaviBtn"
+            android:onClick="odjaviSeAdmin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"

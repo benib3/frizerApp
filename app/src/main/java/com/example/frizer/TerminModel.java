@@ -64,8 +64,10 @@ public class TerminModel {
     }
 
     public String srediDatum(){
-        LocalDate datumFormatiran = LocalDate.parse(this.getDatumTermina().substring(0,this.getDatumTermina().indexOf("T")));
-        return datumFormatiran.getDayOfMonth()+"."+datumFormatiran.getMonthValue()+"."+datumFormatiran.getYear()+".";
+        String dat=this.getDatumTermina().substring(0,this.getDatumTermina().indexOf("T"));
+        String[] datNiz = dat.split("-");
+
+        return datNiz[2]+"."+datNiz[1]+"."+datNiz[0]+".";
     }
 
     @NonNull
