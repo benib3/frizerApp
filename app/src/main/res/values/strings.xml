@@ -126,4 +126,8 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="email">Email</string>
+    <string name="klijent">Klijent :</string>
+    <string name="vrijeme">Vrijeme :</string>
+    <string name="usluga">Usluga :</string>
+    <string name="potvrdi">Potvrdi</string>
 </resources>

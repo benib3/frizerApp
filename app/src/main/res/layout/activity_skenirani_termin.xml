@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".admin.SkeniraniTerminActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/klijentLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/klijent"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+             />
+
+        <TextView
+            android:id="@+id/fullNameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+             />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/vrijemeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vrijeme"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+             />
+
+        <TextView
+            android:id="@+id/datumTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+             />
+
+        <TextView
+            android:id="@+id/terminTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+             />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/uslugaLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usluga"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+             />
+
+        <TextView
+            android:id="@+id/nazivUsluge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+             />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/potvrdiDugme"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:onClick="onPotvrdi"
+            android:text="@string/potvrdi"
+            android:textSize="22sp"
+
+            app:backgroundTint="#050505" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
