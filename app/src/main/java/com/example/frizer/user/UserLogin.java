@@ -15,6 +15,7 @@ import com.example.frizer.MainActivity;
 import com.example.frizer.R;
 import com.example.frizer.admin.LoginActivity;
 import com.example.frizer.api.Consts;
+import com.example.frizer.api.ServerResponse2;
 import com.example.frizer.api.ServerResponse3;
 
 import retrofit2.Call;
@@ -45,7 +46,7 @@ public class UserLogin extends AppCompatActivity {
         switchToTerminiAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                 //switchtoTermini();
+                //switchtoTermini();
                 Retrofit retrofit = new Retrofit.Builder()
                         .baseUrl(Consts.ip)
                         .addConverterFactory(GsonConverterFactory.create())
@@ -70,8 +71,11 @@ public class UserLogin extends AppCompatActivity {
                             editor.commit();
 
                             Intent i = new Intent(UserLogin.this, LoginActivity.class);
-                            Intent i2 = new Intent(UserLogin.this,TerminAddActivity.class);
-                            startActivity(userType==1?i:i2);
+                            if(userType==1){
+                                startActivity(i);
+                            }
+                            else{ switchtoTermini();
+                            }
                         } else
                             Toast.makeText(UserLogin.this, "Greska pri prijavljivanju", Toast.LENGTH_SHORT).show();
                     }
@@ -100,8 +104,40 @@ public class UserLogin extends AppCompatActivity {
     }
 
     private void switchtoTermini () {
-        Intent switchActivityIntent = new Intent(this, TerminAddActivity.class);
-        startActivity(switchActivityIntent);
+        SharedPreferences prefs = getSharedPreferences("TOT", Context.MODE_PRIVATE);
+        String tknStr = prefs.getString(getString(R.string.token),"");
+        JWT jwt = new JWT(tknStr);
+        String userID=jwt.getClaim("userID").asString();
+
+
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(Consts.ip)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        TerminInterface termin = retrofit.create(TerminInterface.class);
+        Call<ServerResponse2> poziv = termin.provjeri("Bearer "+tknStr,userID);
+        poziv.enqueue(new Callback<ServerResponse2>() {
+            @Override
+            public void onResponse(Call<ServerResponse2> call, Response<ServerResponse2> response) {
+                if (response.body().getStatus() == 0) {
+                    Intent terminExists = new Intent(UserLogin.this,QRActivity.class);
+                    startActivity(terminExists);finish();
+
+                }
+                else if(response.body().getStatus()==2) {
+                    Intent switchActivityIntent = new Intent(UserLogin.this, TerminAddActivity.class);
+                    startActivity(switchActivityIntent);finish();   }
+                else
+                    Toast.makeText(UserLogin.this, "Greska pri zahtjevu", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(Call<ServerResponse2> call, Throwable t) {
+                Toast.makeText(UserLogin.this, "Greska pri zahtjevu", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     private void switchtoRegistration () {
         Intent switchActivityIntent = new Intent(this, UserRegister.class);

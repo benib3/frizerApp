@@ -1,5 +1,7 @@
 package com.example.frizer;
 
+
+
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
@@ -60,6 +62,9 @@ public class MainActivity extends AppCompatActivity{
         btn2.setOnClickListener(vd -> pozoviBena("069 049 111"));
         ImageButton btn3 = findViewById(R.id.web_button);
         btn3.setOnClickListener(vd -> openWeb());
+
+
+
 
     }
     private void switchtoAbout () {
