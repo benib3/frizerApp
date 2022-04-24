@@ -136,6 +136,7 @@ public class UserLogin extends AppCompatActivity {
             @Override
             public void onFailure(Call<ServerResponse2> call, Throwable t) {
                 Toast.makeText(UserLogin.this, "Greska pri zahtjevu", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
