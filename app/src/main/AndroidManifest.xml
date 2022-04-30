@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.frizer">
+    package="com.example.frizer" >
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,8 +13,11 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.Frizer">
+        android:theme="@style/Theme.Frizer"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".admin.ListaSvihTerminaActivity"
+            android:exported="false" />
         <activity
             android:name=".admin.QRSkenerActivity"
             android:exported="false" />
@@ -39,16 +42,16 @@
             android:name=".admin.LoginActivity"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
-        <activity android:name=".SplashScreenActivity" android:theme="@style/SplashTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-     </application>
+    </application>
 
 </manifest>
