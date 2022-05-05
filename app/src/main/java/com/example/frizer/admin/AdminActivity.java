@@ -18,11 +18,13 @@ import com.example.frizer.R;
 
 public class AdminActivity extends AppCompatActivity {
     private static final int REQUEST_CAMERA_PERMISSION = 201;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_window);
+        button = (Button) findViewById(R.id.admin_zakazani_terminiBtn);
         //macinja bar gornji
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
@@ -36,6 +38,14 @@ public class AdminActivity extends AppCompatActivity {
 
 
 
+            }
+        });
+
+        //prebaci se na listu svih termina
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switchtoAdminTermini();
             }
         });
 
@@ -55,7 +65,7 @@ public class AdminActivity extends AppCompatActivity {
     }
 
     private void switchtoAdminTermini(){
-        Intent actIntent=new Intent(this, AdminTermini.class);
+        Intent actIntent=new Intent(this, ListaSvihTerminaActivity.class);
         startActivity(actIntent);
     }
 

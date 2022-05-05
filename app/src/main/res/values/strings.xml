@@ -98,11 +98,10 @@
     <string name="title_activity_user_register">UserRegister</string>
 
 
-
     <string name="uspjeno">Uspjesno zakazan termin!</string>
     <string name="neuspjeno">Neuspjesno zakazan termin!</string>
     <string name="pogresan_unos">Pogresan unos!</string>
-   <!-- <string name="no_conn">Molimo vas povezite se na internet.</string>-->
+    <!-- <string name="no_conn">Molimo vas povezite se na internet.</string>-->
 
 
     <string name="ime">Ime</string>
