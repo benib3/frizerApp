@@ -132,12 +132,14 @@ public class ListaSvihTerminaActivity extends AppCompatActivity {
             }
         });
 
+        Toast.makeText(this, "Fec", Toast.LENGTH_LONG).show();
     }
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_svih_termina);
-        setTitle("Lista svih termina");
         fecuj();
     }
+
+
 }
