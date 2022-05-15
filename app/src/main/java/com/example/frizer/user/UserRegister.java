@@ -12,6 +12,7 @@ import com.example.frizer.api.Consts;
 import com.example.frizer.api.ServerResponse3;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.view.View;
 import android.widget.TextView;
@@ -32,7 +33,7 @@ public class UserRegister extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
 
     }

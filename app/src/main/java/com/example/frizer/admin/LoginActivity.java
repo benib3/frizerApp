@@ -1,6 +1,7 @@
 package com.example.frizer.admin;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Context;
 import android.content.Intent;
@@ -38,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         View switchTosecondActivity = findViewById(R.id.RegButton);
 
         switchTosecondActivity.setOnClickListener(new View.OnClickListener() {

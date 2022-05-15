@@ -24,6 +24,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.auth0.android.jwt.JWT;
 import com.example.frizer.R;
@@ -102,7 +103,7 @@ public class TerminAddActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_termin_add);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#6B050505")));
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         usluge=(Spinner)findViewById(R.id.spin_usluge);
         vrijeme=(Spinner)findViewById(R.id.spin_termini);
         txtDate=(TextView)findViewById(R.id.textDatum);

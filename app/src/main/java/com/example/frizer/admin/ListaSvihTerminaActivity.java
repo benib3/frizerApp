@@ -139,6 +139,7 @@ public class ListaSvihTerminaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_svih_termina);
         fecuj();
+        getSupportActionBar().hide();
     }
 
 

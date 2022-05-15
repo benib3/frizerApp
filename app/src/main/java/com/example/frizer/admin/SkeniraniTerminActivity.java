@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.frizer.R;
 import com.example.frizer.api.Consts;
@@ -63,6 +64,7 @@ public class SkeniraniTerminActivity extends AppCompatActivity {
         setTerminID(getIntent().getStringExtra("terminID"));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_skenirani_termin);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         SharedPreferences prefs = getSharedPreferences("TOT", Context.MODE_PRIVATE);
         String tknStr = prefs.getString(getString(R.string.token),"");
 

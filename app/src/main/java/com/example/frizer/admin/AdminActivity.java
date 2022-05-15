@@ -2,6 +2,7 @@ package com.example.frizer.admin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
@@ -29,6 +30,7 @@ public class AdminActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         View qrSkener=findViewById(R.id.admin_QRCode);
         qrSkener.setOnClickListener(new View.OnClickListener() {
             @Override

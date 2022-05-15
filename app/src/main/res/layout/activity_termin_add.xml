@@ -27,9 +27,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:autoText="false"
             android:background="#48FDFDFD"
             android:fontFamily="sans-serif-black"
             android:text="@string/zakazite_svoj_termin_na_vrijeme_odaberite_datum_i_vrijeme"
+            android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="#4E4D4D"
             android:textSize="20sp" />

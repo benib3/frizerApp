@@ -1,6 +1,7 @@
 package com.example.frizer.user;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Context;
 import android.content.Intent;
@@ -33,6 +34,7 @@ public class UserLogin extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         SharedPreferences prefs = getSharedPreferences("TOT", Context.MODE_PRIVATE);
         String tknStr = prefs.getString(getString(R.string.token),"");
         if(tknStr!="") {
