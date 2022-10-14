@@ -36,3 +36,5 @@ Benefists of this type of system are:
 	✔️ Better organization of work
 	✔️ Much easier management of your customers
 	✔️ Availability anywhere
+
+![Slide 16_9 - 1](https://user-images.githubusercontent.com/75453780/195839144-07923e2c-0e63-4710-9644-369e7baeafcf.png)
